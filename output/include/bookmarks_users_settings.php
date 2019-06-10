@@ -118,8 +118,8 @@ $tdatabookmarks_users[".allSearchFields"] = array();
 $tdatabookmarks_users[".filterFields"] = array();
 $tdatabookmarks_users[".requiredSearchFields"] = array();
 
-$tdatabookmarks_users[".allSearchFields"][] = "user";
-	$tdatabookmarks_users[".allSearchFields"][] = "Listar";
+$tdatabookmarks_users[".allSearchFields"][] = "Listar";
+	$tdatabookmarks_users[".allSearchFields"][] = "user";
 	
 
 $tdatabookmarks_users[".googleLikeFields"] = array();
@@ -128,8 +128,8 @@ $tdatabookmarks_users[".googleLikeFields"][] = "Listar";
 
 
 $tdatabookmarks_users[".advSearchFields"] = array();
-$tdatabookmarks_users[".advSearchFields"][] = "user";
 $tdatabookmarks_users[".advSearchFields"][] = "Listar";
+$tdatabookmarks_users[".advSearchFields"][] = "user";
 
 $tdatabookmarks_users[".tableType"] = "list";
 
@@ -226,8 +226,8 @@ $tdatabookmarks_users[".viewFields"] = array();
 $tdatabookmarks_users[".addFields"] = array();
 
 $tdatabookmarks_users[".masterListFields"] = array();
-$tdatabookmarks_users[".masterListFields"][] = "user";
 $tdatabookmarks_users[".masterListFields"][] = "Listar";
+$tdatabookmarks_users[".masterListFields"][] = "user";
 
 $tdatabookmarks_users[".inlineAddFields"] = array();
 

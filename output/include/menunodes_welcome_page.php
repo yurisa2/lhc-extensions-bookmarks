@@ -56,7 +56,7 @@ function getMenuNodes_welcome_page($menuNodesObject)
 	$menuNodesObject->menuNodes["welcome_page"][] = $menuNode;
 	$menuNode = array();
 	$menuNode["id"] = "3";
-	$menuNode["name"] = "Iniciar Chat";
+	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "bookmarks_inits";

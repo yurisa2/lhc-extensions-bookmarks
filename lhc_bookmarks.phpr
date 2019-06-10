@@ -2,7 +2,35 @@
 <project app="PHPRunner" version="9.0" build="26521">
 	<tables>
 		<v>
-			<m_arrEventHandlers />
+			<m_arrEventHandlers>
+				<v>
+					<m_isRunTime>0</m_isRunTime>
+					<m_strPage>Add page</m_strPage>
+					<m_strName>EVENT_AFTERADD</m_strName>
+					<m_strEventCode>
+		$data = array('params' =&gt; json_encode($values));
+		
+		$options = array(
+			'http' =&gt; array(
+				'header'  =&gt; "Content-type: application/x-www-form-urlencoded\r\n",
+				'method'  =&gt; 'POST',
+				'content' =&gt; http_build_query($data)
+			)
+		);
+		$context  = stream_context_create($options);
+		$result = file_get_contents('../../initiate_wapp_hook.php', false, $context);
+		
+</m_strEventCode>
+					<m_strEventID>EVENT_AFTERADD</m_strEventID>
+					<m_strWidgetID></m_strWidgetID>
+					<sub />
+					<m_caption>
+						<text></text>
+						<nameType>Text</nameType>
+					</m_caption>
+					<m_strDotNetLanguage>cs</m_strDotNetLanguage>
+				</v>
+			</m_arrEventHandlers>
 			<DiagramCoordinates>
 				<x1>30</x1>
 				<x2>156</x2>

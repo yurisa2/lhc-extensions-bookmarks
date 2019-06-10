@@ -1215,7 +1215,8 @@ $queryData_bookmarks = createSqlQuery_bookmarks();
 
 $tdatabookmarks[".sqlquery"] = $queryData_bookmarks;
 
-$tableEvents["bookmarks"] = new eventsBase;
-$tdatabookmarks[".hasEvents"] = false;
+include_once(getabspath("include/bookmarks_events.php"));
+$tableEvents["bookmarks"] = new eventclass_bookmarks;
+$tdatabookmarks[".hasEvents"] = true;
 
 ?>

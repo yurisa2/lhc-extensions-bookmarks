@@ -72,31 +72,6 @@
 		</div>
 	</div>
 </div>
-	{BEGIN user_fieldblock}		
-	<div class="container {$fielddispclass_user}" data-fieldname="user">
-		<div class="form-group">
-			<div class="col-md-2">
-				<div class="row">
-					<label class="col-md-9 control-label" for="{$labelfor_user}">
-						{$label bookmarks_users user}
-					</label>
-					<div class="col-md-3 checkbox rnr-bc">
-						<span><input type="checkbox" {$user_notbox}></span>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-2" >
-				{$searchtype_user}
-			</div>
-			<div class="col-md-4" >
-				{$user_editcontrol}
-			</div>
-			<div class="col-md-4" >
-				{$user_editcontrol1}
-			</div>
-		</div>
-	</div>
-{END user_fieldblock}
 	{BEGIN Listar_fieldblock}		
 	<div class="container {$fielddispclass_Listar}" data-fieldname="Listar">
 		<div class="form-group">
@@ -122,6 +97,31 @@
 		</div>
 	</div>
 {END Listar_fieldblock}
+	{BEGIN user_fieldblock}		
+	<div class="container {$fielddispclass_user}" data-fieldname="user">
+		<div class="form-group">
+			<div class="col-md-2">
+				<div class="row">
+					<label class="col-md-9 control-label" for="{$labelfor_user}">
+						{$label bookmarks_users user}
+					</label>
+					<div class="col-md-3 checkbox rnr-bc">
+						<span><input type="checkbox" {$user_notbox}></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_user}
+			</div>
+			<div class="col-md-4" >
+				{$user_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$user_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END user_fieldblock}
 </div>
 
 

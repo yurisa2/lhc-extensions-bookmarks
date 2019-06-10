@@ -31,7 +31,7 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
 	$menuNode["id"] = "2";
-	$menuNode["name"] = "";
+	$menuNode["name"] = "Agendas dos usuários";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "bookmarks_users";
@@ -48,14 +48,14 @@ function getMenuNodes_main($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Bookmarks Users";
+	$menuNode["title"] = "Agendas dos usuários";
 
 
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
 	$menuNode["id"] = "3";
-	$menuNode["name"] = "Iniciar Chat";
+	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "bookmarks_inits";

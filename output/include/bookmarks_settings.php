@@ -254,7 +254,6 @@ $tdatabookmarks[".hideMobileList"] = array();
 
 
 $tdatabookmarks[".viewFields"] = array();
-$tdatabookmarks[".viewFields"][] = "initiate";
 
 $tdatabookmarks[".addFields"] = array();
 $tdatabookmarks[".addFields"][] = "phone";
@@ -281,13 +280,11 @@ $tdatabookmarks[".editFields"][] = "user";
 $tdatabookmarks[".inlineEditFields"] = array();
 
 $tdatabookmarks[".exportFields"] = array();
-$tdatabookmarks[".exportFields"][] = "initiate";
 
 $tdatabookmarks[".importFields"] = array();
 $tdatabookmarks[".importFields"][] = "initiate";
 
 $tdatabookmarks[".printFields"] = array();
-$tdatabookmarks[".printFields"][] = "initiate";
 
 //	phone
 //	Custom field settings
@@ -904,14 +901,11 @@ $tdatabookmarks[".printFields"][] = "initiate";
 	
 	
 	
-		$fdata["bViewPage"] = true;
-
+	
 		$fdata["bAdvancedSearch"] = true;
 
-		$fdata["bPrinterPage"] = true;
-
-		$fdata["bExportPage"] = true;
-
+	
+	
 		$fdata["strField"] = "phone";
 
 		$fdata["isSQLExpression"] = true;
@@ -1215,8 +1209,7 @@ $queryData_bookmarks = createSqlQuery_bookmarks();
 
 $tdatabookmarks[".sqlquery"] = $queryData_bookmarks;
 
-include_once(getabspath("include/bookmarks_events.php"));
-$tableEvents["bookmarks"] = new eventclass_bookmarks;
-$tdatabookmarks[".hasEvents"] = true;
+$tableEvents["bookmarks"] = new eventsBase;
+$tdatabookmarks[".hasEvents"] = false;
 
 ?>

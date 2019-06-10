@@ -62,8 +62,8 @@ $page_layouts["menu"] = $layout;
 require_once('include/xtempl.php');
 require_once(getabspath("classes/cipherer.php"));
 
-include_once(getabspath("include/bookmarks_events.php"));
-$tableEvents["bookmarks"] = new eventclass_bookmarks;
+include_once(getabspath("include/bookmarks_inits_events.php"));
+$tableEvents["bookmarks_inits"] = new eventclass_bookmarks_inits;
 
 $xt = new Xtempl();
 

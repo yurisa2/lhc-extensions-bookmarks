@@ -601,17 +601,14 @@ $tdatabookmarks_inits[".printFields"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-								$edata["validateAs"]["basicValidate"][] = "DenyDuplicated";
-	$edata["validateAs"]["customMessages"]["DenyDuplicated"] = array("message" => "Telefone %value% ja esta cadastrado", "messageType" => "Text");
-
+	
 	
 	//	End validation
 
 	
 			
 	
-		$edata["denyDuplicates"] = true;
-
+	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
 //	End Edit Formats
@@ -1042,7 +1039,8 @@ $queryData_bookmarks_inits = createSqlQuery_bookmarks_inits();
 
 $tdatabookmarks_inits[".sqlquery"] = $queryData_bookmarks_inits;
 
-$tableEvents["bookmarks_inits"] = new eventsBase;
-$tdatabookmarks_inits[".hasEvents"] = false;
+include_once(getabspath("include/bookmarks_inits_events.php"));
+$tableEvents["bookmarks_inits"] = new eventclass_bookmarks_inits;
+$tdatabookmarks_inits[".hasEvents"] = true;
 
 ?>

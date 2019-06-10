@@ -2,35 +2,7 @@
 <project app="PHPRunner" version="9.0" build="26521">
 	<tables>
 		<v>
-			<m_arrEventHandlers>
-				<v>
-					<m_isRunTime>0</m_isRunTime>
-					<m_strPage>Add page</m_strPage>
-					<m_strName>EVENT_AFTERADD</m_strName>
-					<m_strEventCode>
-		$data = array('params' =&gt; json_encode($values));
-		
-		$options = array(
-			'http' =&gt; array(
-				'header'  =&gt; "Content-type: application/x-www-form-urlencoded\r\n",
-				'method'  =&gt; 'POST',
-				'content' =&gt; http_build_query($data)
-			)
-		);
-		$context  = stream_context_create($options);
-		$result = file_get_contents('../../initiate_wapp_hook.php', false, $context);
-		
-</m_strEventCode>
-					<m_strEventID>EVENT_AFTERADD</m_strEventID>
-					<m_strWidgetID></m_strWidgetID>
-					<sub />
-					<m_caption>
-						<text></text>
-						<nameType>Text</nameType>
-					</m_caption>
-					<m_strDotNetLanguage>cs</m_strDotNetLanguage>
-				</v>
-			</m_arrEventHandlers>
+			<m_arrEventHandlers />
 			<DiagramCoordinates>
 				<x1>30</x1>
 				<x2>156</x2>
@@ -1302,9 +1274,9 @@ phone AS initiate</m_sqlHead>
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
 					<m_bListPage>1</m_bListPage>
-					<m_bViewPage>1</m_bViewPage>
-					<m_bPrinterPage>1</m_bPrinterPage>
-					<m_bExportPage>1</m_bExportPage>
+					<m_bViewPage>0</m_bViewPage>
+					<m_bPrinterPage>0</m_bPrinterPage>
+					<m_bExportPage>0</m_bExportPage>
 					<m_bImportPage>1</m_bImportPage>
 					<m_bSearch>0</m_bSearch>
 					<m_bAdvancedSearch>1</m_bAdvancedSearch>
@@ -1810,15 +1782,7 @@ phone AS initiate</m_sqlHead>
 					<tabgroup>0</tabgroup>
 				</v>
 			</m_arrAddPageLayout>
-			<m_arrViewPageLayout>
-				<v>
-					<id>initiate</id>
-					<type>0</type>
-					<order>0</order>
-					<search>finitiate</search>
-					<tabgroup>0</tabgroup>
-				</v>
-			</m_arrViewPageLayout>
+			<m_arrViewPageLayout />
 			<m_arrRegisterPageLayout />
 			<m_arrRecsPerPage>
 				<v>10</v>
@@ -1840,7 +1804,7 @@ phone AS initiate</m_sqlHead>
 			</m_arrGroupsPerPage>
 			<m_bHighlightSearchResults>1</m_bHighlightSearchResults>
 			<m_bFlexibleSearch>1</m_bFlexibleSearch>
-			<m_nPartialBuildState>1</m_nPartialBuildState>
+			<m_nPartialBuildState>0</m_nPartialBuildState>
 			<m_bSaveSearches>0</m_bSaveSearches>
 			<m_bWarnLeavingPages>1</m_bWarnLeavingPages>
 			<m_pDashboard>
@@ -3783,7 +3747,7 @@ GROUP BY `user`
 			</m_arrGroupsPerPage>
 			<m_bHighlightSearchResults>1</m_bHighlightSearchResults>
 			<m_bFlexibleSearch>1</m_bFlexibleSearch>
-			<m_nPartialBuildState>1</m_nPartialBuildState>
+			<m_nPartialBuildState>0</m_nPartialBuildState>
 			<m_bSaveSearches>0</m_bSaveSearches>
 			<m_bWarnLeavingPages>1</m_bWarnLeavingPages>
 			<m_pDashboard>
@@ -3945,7 +3909,39 @@ GROUP BY `user`
 			</query>
 		</v>
 		<v>
-			<m_arrEventHandlers />
+			<m_arrEventHandlers>
+				<v>
+					<m_isRunTime>0</m_isRunTime>
+					<m_strPage>Add page</m_strPage>
+					<m_strName>EVENT_AFTERADD</m_strName>
+					<m_strEventCode>
+		$data = array('params' =&gt; json_encode($values));
+		
+		$options = array(
+			'http' =&gt; array(
+				'header'  =&gt; "Content-type: application/x-www-form-urlencoded\r\n",
+				'method'  =&gt; 'POST',
+				'content' =&gt; http_build_query($data)
+			)
+		);
+		$context  = stream_context_create($options);
+		$result = file_get_contents('http://sa2.com.br/whatsapp_lhc/wapp-LHC-Bridge/initiate_wapp_hook.php', false, $context);
+		
+		
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.</m_strEventCode>
+					<m_strEventID>EVENT_AFTERADD</m_strEventID>
+					<m_strWidgetID></m_strWidgetID>
+					<sub />
+					<m_caption>
+						<text></text>
+						<nameType>Text</nameType>
+					</m_caption>
+					<m_strDotNetLanguage>cs</m_strDotNetLanguage>
+				</v>
+			</m_arrEventHandlers>
 			<DiagramCoordinates>
 				<x1>387</x1>
 				<x2>549</x2>
@@ -4708,7 +4704,7 @@ FROM bookmarks_inits</m_strSQL>
 							<m_pluginInitString></m_pluginInitString>
 							<m_strDotNetLanguage>cs</m_strDotNetLanguage>
 							<m_strAutoUpdateDotNetLanguage>cs</m_strAutoUpdateDotNetLanguage>
-							<m_bDenyDuplicates>1</m_bDenyDuplicates>
+							<m_bDenyDuplicates>0</m_bDenyDuplicates>
 							<m_strDenyMessage>
 								<text>Telefone %value% ja esta cadastrado</text>
 								<nameType>Text</nameType>
@@ -32821,8 +32817,8 @@ phone AS initiate</m_strFieldList>
 		<m_bUseBuiltInMailer>0</m_bUseBuiltInMailer>
 	</Registration>
 	<BuildInfo>
-		<m_nBuildTimeLow>878048928</m_nBuildTimeLow>
-		<m_nBuildTimeHigh>30744382</m_nBuildTimeHigh>
+		<m_nBuildTimeLow>-1753079440</m_nBuildTimeLow>
+		<m_nBuildTimeHigh>30744389</m_nBuildTimeHigh>
 		<nonProcessFiles />
 		<m_bCompressJs>1</m_bCompressJs>
 		<builtFiles>
@@ -35362,6 +35358,22 @@ phone AS initiate</m_strFieldList>
 				<filename>C:\Bitnami\wampstack-7.1.20-1\apache2\htdocs\lhc_bookmarks\output\templates\bookmarks_inits_add.htm</filename>
 				<source>C:\Bitnami\wampstack-7.1.20-1\apache2\htdocs\lhc_bookmarks\tmp\visual\bookmarks_inits_add.htm</source>
 			</v>
+			<v>
+				<filename>C:\Bitnami\wampstack-7.1.20-1\apache2\htdocs\lhc_bookmarks\output\include\bookmarks_events.php</filename>
+				<source>C:\Program Files (x86)\PHPRunner9.0\source\include\events.php</source>
+			</v>
+			<v>
+				<filename>C:\Bitnami\wampstack-7.1.20-1\apache2\htdocs\lhc_bookmarks\output\include\runnerJS\events\pageevents_bookmarks.js</filename>
+				<source>C:\Program Files (x86)\PHPRunner9.0\source\include\common\runnerJS\events\pageevents.js</source>
+			</v>
+			<v>
+				<filename>C:\Bitnami\wampstack-7.1.20-1\apache2\htdocs\lhc_bookmarks\output\include\bookmarks_inits_events.php</filename>
+				<source>C:\Program Files (x86)\PHPRunner9.0\source\include\events.php</source>
+			</v>
+			<v>
+				<filename>C:\Bitnami\wampstack-7.1.20-1\apache2\htdocs\lhc_bookmarks\output\include\runnerJS\events\pageevents_bookmarks_inits.js</filename>
+				<source>C:\Program Files (x86)\PHPRunner9.0\source\include\common\runnerJS\events\pageevents.js</source>
+			</v>
 		</builtFiles>
 		<m_builtDBTables>
 			<v>bookmarks</v>
@@ -35439,7 +35451,7 @@ phone AS initiate</m_strFieldList>
 	<m_bWebReports>0</m_bWebReports>
 	<m_strWRConnectionID></m_strWRConnectionID>
 	<m_strWRAdminPassword>webreports</m_strWRAdminPassword>
-	<m_projectBuildNumber>6</m_projectBuildNumber>
+	<m_projectBuildNumber>8</m_projectBuildNumber>
 	<m_FTPlocation />
 	<m_FrontPagelocation />
 	<FTPFiles />
@@ -35453,7 +35465,7 @@ phone AS initiate</m_strFieldList>
 	<m_nDefaultLastYearFactor>10</m_nDefaultLastYearFactor>
 	<m_bBuildMobile>0</m_bBuildMobile>
 	<m_bDisplayDesktop>0</m_bDisplayDesktop>
-	<m_projectCRC>1175275019</m_projectCRC>
+	<m_projectCRC>-1324175078</m_projectCRC>
 	<viewPluginsWithJS />
 	<m_projectGUID>{64FFBE60-C56A-4f53-85EF-829D7A32391C}</m_projectGUID>
 	<m_EventsCSProjectGUID>{64FFBE60-C56A-4f53-85EF-829D7A32391D}</m_EventsCSProjectGUID>

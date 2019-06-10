@@ -2529,6 +2529,10 @@ function fillProjectEntites()
 		return;
 	$projectEntities[ "bookmarks" ] = array( "url" => "bookmarks", "type" => 0 );
 	$projectEntitiesReverse[ "bookmarks" ] = "bookmarks";
+	$projectEntities[ "bookmarks_users" ] = array( "url" => "bookmarks_users", "type" => 1 );
+	$projectEntitiesReverse[ "bookmarks_users" ] = "bookmarks_users";
+	$projectEntities[ "bookmarks_inits" ] = array( "url" => "bookmarks_inits", "type" => 0 );
+	$projectEntitiesReverse[ "bookmarks_inits" ] = "bookmarks_inits";
 }
 
 //	return table short name

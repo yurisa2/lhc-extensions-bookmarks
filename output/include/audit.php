@@ -307,6 +307,14 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="bookmarks_users")
+		{
+			return false;
+		}
+		if($table=="bookmarks_inits")
+		{
+			return false;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -607,6 +615,14 @@ class AuditTrailFile
 	function logValueEnable($table)
 	{
 		if($table=="bookmarks")
+		{
+			return false;
+		}
+		if($table=="bookmarks_users")
+		{
+			return false;
+		}
+		if($table=="bookmarks_inits")
 		{
 			return false;
 		}

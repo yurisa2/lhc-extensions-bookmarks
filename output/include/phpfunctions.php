@@ -766,6 +766,11 @@ function CustomExpression($value, $data, $field, $ptype, $table="")
 	global $strTableName;
 	if(!$table)
 		$table = $strTableName;
+				if($table=="bookmarks_users" && $field=="Listar")
+	{
+		  $value="<a href=bookmarks_list.php?qs=$value> Lista Contatos </a>";;
+		return $value;
+	}
 	return $value;
 }
 
@@ -811,6 +816,22 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return $_SESSION["lhc_ezcAuth_id"];
 	}
+				if($table=="bookmarks_users" && $field=="user")
+	{
+		return $_SESSION["lhc_ezcAuth_id"];
+	}
+				if($table=="bookmarks_inits" && $field=="date")
+	{
+		return now();
+	}
+				if($table=="bookmarks_inits" && $field=="phone")
+	{
+		return 55;
+	}
+				if($table=="bookmarks_inits" && $field=="user")
+	{
+		return $_SESSION["lhc_ezcAuth_id"];
+	}
 	return "";
 }
 
@@ -825,6 +846,14 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 				if($table=="bookmarks" && $field=="user")
 	{
 		return $_SESSION["lhc_ezcAuth_id"];
+	}
+				if($table=="bookmarks_users" && $field=="user")
+	{
+		return $_SESSION["lhc_ezcAuth_id"];
+	}
+				if($table=="bookmarks_inits" && $field=="date")
+	{
+		return now();
 	}
 	return "";
 }

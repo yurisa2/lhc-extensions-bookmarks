@@ -516,9 +516,13 @@ $tableCaptions["Portuguese(Brazil)"] = array();
 $tableCaptions["Portuguese(Brazil)"][""] = "";
 $tableCaptions["Portuguese(Brazil)"]["bookmarks"] = "Bookmarks";
 $tableCaptions["Portuguese(Brazil)"][""] = "";
+$tableCaptions["Portuguese(Brazil)"]["bookmarks_users"] = "Bookmarks Users";
+$tableCaptions["Portuguese(Brazil)"]["bookmarks_inits"] = "Iniciar Chat";
 $tableCaptions[""] = array();
 $tableCaptions[""][""] = "";
 $tableCaptions[""]["bookmarks"] = "Bookmarks";
+$tableCaptions[""]["bookmarks_users"] = "Bookmarks Users";
+$tableCaptions[""]["bookmarks_inits"] = "Bookmarks Inits";
 
 
 $globalEvents = new class_GlobalEvents;

@@ -40,6 +40,7 @@ function InitLookupLinks()
 
 	$lookupTableLinks = array();
 
+	$lookupTableLinks["bookmarks"]["bookmarks_inits.phone"]["edit"] = array("table" => "bookmarks_inits", "field" => "phone", "page" => "edit");
 }
 
 ?>

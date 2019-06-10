@@ -462,6 +462,10 @@ class Chart
 			
 		if("bookmarks" == $this->chrt_array['tables'][0])
 			return true;
+		if("bookmarks" == $this->chrt_array['tables'][0])
+			return true;
+		if("bookmarks_inits" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

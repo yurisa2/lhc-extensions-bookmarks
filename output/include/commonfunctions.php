@@ -261,6 +261,10 @@ function checkTableName($shortTName, $type=false)
 
 	if ("bookmarks" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
+	if ("bookmarks_users" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("bookmarks_inits" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
 	return false;
 }
 
@@ -311,6 +315,8 @@ function GetTablesList($pdfMode = false)
 {
 	$arr = array();
 		$arr[]="bookmarks";
+		$arr[]="bookmarks_users";
+		$arr[]="bookmarks_inits";
 	return $arr;
 }
 
@@ -932,6 +938,14 @@ function GetUserPermissions($table="")
 	if($table=="bookmarks")
 	{
 			$permissions =  "ADESPIM";
+	}
+	if($table=="bookmarks_users")
+	{
+			$permissions =  "ADESPIM";
+	}
+	if($table=="bookmarks_inits")
+	{
+			$permissions =  "ADEPIM";
 	}
 
 	if($globalEvents->exists("GetTablePermissions", $table))

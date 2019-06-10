@@ -303,6 +303,9 @@
 	.bs-gridcell[data-field=ID]:before {
 		content: "{$label bookmarks ID}";
 	}
+	.bs-gridcell[data-field=initiate]:before {
+		content: "{$label bookmarks initiate}";
+	}
 </style>
 <table {$grid_hiddenattr} data-pageid="{$pageid}" data-brick="grid" class="table {$grid_classes} bs-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" >
 	<thead>
@@ -315,6 +318,19 @@
 
 									
 																		
+									{BEGIN initiate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$initiate_class}">
+									{BEGIN initiate_fieldheader}
+																				<span {$initiate_orderlinkattrs}>
+											{$label bookmarks initiate}
+										</span>
+									{END initiate_fieldheader}
+									</th>
+									{END initiate_fieldheadercolumn}
+									
+									
+									
+									
 									{BEGIN phone_fieldheadercolumn}
 									<th class="rnr-gridfieldlabel {$phone_class}">
 									{BEGIN phone_fieldheader}
@@ -397,6 +413,13 @@
 
 	
 	
+
+	{BEGIN initiate_fieldcolumn}
+	<td class="bs-gridcell {$initiate_class}" {$initiate_style} data-field=initiate>
+		{$initiate_value}
+	</td>
+{END initiate_fieldcolumn}
+
 
 	{BEGIN phone_fieldcolumn}
 	<td class="bs-gridcell {$phone_class}" {$phone_style} data-field=phone>

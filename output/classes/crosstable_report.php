@@ -1270,6 +1270,10 @@ class CrossTableReport
 		$isDB = false;
 		if("bookmarks" == $this->xml_array['tables'][0])
 			$isDB = true;
+		if("bookmarks" == $this->xml_array['tables'][0])
+			$isDB = true;
+		if("bookmarks_inits" == $this->xml_array['tables'][0])
+			$isDB = true;
 		return $isDB;
 	}
 	

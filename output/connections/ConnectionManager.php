@@ -277,6 +277,8 @@ class ConnectionManager
 	{
 		$connectionsIds = array();
 		$connectionsIds["bookmarks"] = "wappchat_at_wappchat_mysql_dbaas_com_br";
+		$connectionsIds["bookmarks_users"] = "wappchat_at_wappchat_mysql_dbaas_com_br";
+		$connectionsIds["bookmarks_inits"] = "wappchat_at_wappchat_mysql_dbaas_com_br";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

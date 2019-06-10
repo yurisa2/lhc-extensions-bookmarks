@@ -31,6 +31,8 @@ if(mlang_getcurrentlang()=="Portuguese(Brazil)")
 	$fieldToolTipsbookmarks["Portuguese(Brazil)"]["user"] = "Quem anotou";
 	$fieldLabelsbookmarks["Portuguese(Brazil)"]["ID"] = "ID";
 	$fieldToolTipsbookmarks["Portuguese(Brazil)"]["ID"] = "";
+	$fieldLabelsbookmarks["Portuguese(Brazil)"]["initiate"] = "Initiate";
+	$fieldToolTipsbookmarks["Portuguese(Brazil)"]["initiate"] = "";
 	if (count($fieldToolTipsbookmarks["Portuguese(Brazil)"]))
 		$tdatabookmarks[".isUseToolTips"] = true;
 }
@@ -39,6 +41,8 @@ if(mlang_getcurrentlang()=="")
 	$fieldLabelsbookmarks[""] = array();
 	$fieldToolTipsbookmarks[""] = array();
 	$pageTitlesbookmarks[""] = array();
+	$fieldLabelsbookmarks[""]["initiate"] = "Initiate";
+	$fieldToolTipsbookmarks[""]["initiate"] = "";
 	if (count($fieldToolTipsbookmarks[""]))
 		$tdatabookmarks[".isUseToolTips"] = true;
 }
@@ -135,6 +139,7 @@ $tdatabookmarks[".allSearchFields"][] = "phone";
 	$tdatabookmarks[".allSearchFields"][] = "name";
 	$tdatabookmarks[".allSearchFields"][] = "obs";
 	$tdatabookmarks[".allSearchFields"][] = "user";
+	$tdatabookmarks[".allSearchFields"][] = "initiate";
 	
 
 $tdatabookmarks[".googleLikeFields"] = array();
@@ -143,6 +148,7 @@ $tdatabookmarks[".googleLikeFields"][] = "name";
 $tdatabookmarks[".googleLikeFields"][] = "obs";
 $tdatabookmarks[".googleLikeFields"][] = "user";
 $tdatabookmarks[".googleLikeFields"][] = "ID";
+$tdatabookmarks[".googleLikeFields"][] = "initiate";
 
 
 $tdatabookmarks[".advSearchFields"] = array();
@@ -151,6 +157,7 @@ $tdatabookmarks[".advSearchFields"][] = "name";
 $tdatabookmarks[".advSearchFields"][] = "obs";
 $tdatabookmarks[".advSearchFields"][] = "user";
 $tdatabookmarks[".advSearchFields"][] = "ID";
+$tdatabookmarks[".advSearchFields"][] = "initiate";
 
 $tdatabookmarks[".tableType"] = "list";
 
@@ -193,7 +200,7 @@ $tdatabookmarks[".strOrderBy"] = $tstrOrderBy;
 
 $tdatabookmarks[".orderindexes"] = array();
 
-$tdatabookmarks[".sqlHead"] = "SELECT phone,  name,  obs,  `user`,  ID";
+$tdatabookmarks[".sqlHead"] = "SELECT phone,  name,  obs,  `user`,  ID,  phone AS initiate";
 $tdatabookmarks[".sqlFrom"] = "FROM bookmarks";
 $tdatabookmarks[".sqlWhereExpr"] = "";
 $tdatabookmarks[".sqlTail"] = "";
@@ -237,6 +244,7 @@ $tableKeysbookmarks[] = "ID";
 $tdatabookmarks[".Keys"] = $tableKeysbookmarks;
 
 $tdatabookmarks[".listFields"] = array();
+$tdatabookmarks[".listFields"][] = "initiate";
 $tdatabookmarks[".listFields"][] = "phone";
 $tdatabookmarks[".listFields"][] = "name";
 $tdatabookmarks[".listFields"][] = "obs";
@@ -246,6 +254,7 @@ $tdatabookmarks[".hideMobileList"] = array();
 
 
 $tdatabookmarks[".viewFields"] = array();
+$tdatabookmarks[".viewFields"][] = "initiate";
 
 $tdatabookmarks[".addFields"] = array();
 $tdatabookmarks[".addFields"][] = "phone";
@@ -259,6 +268,7 @@ $tdatabookmarks[".masterListFields"][] = "name";
 $tdatabookmarks[".masterListFields"][] = "obs";
 $tdatabookmarks[".masterListFields"][] = "user";
 $tdatabookmarks[".masterListFields"][] = "ID";
+$tdatabookmarks[".masterListFields"][] = "initiate";
 
 $tdatabookmarks[".inlineAddFields"] = array();
 
@@ -271,10 +281,13 @@ $tdatabookmarks[".editFields"][] = "user";
 $tdatabookmarks[".inlineEditFields"] = array();
 
 $tdatabookmarks[".exportFields"] = array();
+$tdatabookmarks[".exportFields"][] = "initiate";
 
 $tdatabookmarks[".importFields"] = array();
+$tdatabookmarks[".importFields"][] = "initiate";
 
 $tdatabookmarks[".printFields"] = array();
+$tdatabookmarks[".printFields"][] = "initiate";
 
 //	phone
 //	Custom field settings
@@ -284,7 +297,7 @@ $tdatabookmarks[".printFields"] = array();
 	$fdata["GoodName"] = "phone";
 	$fdata["ownerTable"] = "bookmarks";
 	$fdata["Label"] = GetFieldLabel("bookmarks","phone");
-	$fdata["FieldType"] = 3;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -345,8 +358,7 @@ $tdatabookmarks[".printFields"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -358,19 +370,18 @@ $tdatabookmarks[".printFields"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "number";
+			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-		
+			$edata["EditParams"].= " maxlength=50";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-			$edata["validateAs"]["basicValidate"][] = "DenyDuplicated";
+								$edata["validateAs"]["basicValidate"][] = "DenyDuplicated";
 	$edata["validateAs"]["customMessages"]["DenyDuplicated"] = array("message" => "Telefone %value% ja existe no cadastro", "messageType" => "Text");
 
 	
@@ -873,6 +884,126 @@ $tdatabookmarks[".printFields"] = array();
 
 
 	$tdatabookmarks["ID"] = $fdata;
+//	initiate
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 6;
+	$fdata["strName"] = "initiate";
+	$fdata["GoodName"] = "initiate";
+	$fdata["ownerTable"] = "bookmarks";
+	$fdata["Label"] = GetFieldLabel("bookmarks","initiate");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+	
+		$fdata["bListPage"] = true;
+
+	
+	
+	
+	
+		$fdata["bViewPage"] = true;
+
+		$fdata["bAdvancedSearch"] = true;
+
+		$fdata["bPrinterPage"] = true;
+
+		$fdata["bExportPage"] = true;
+
+		$fdata["strField"] = "phone";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "phone";
+
+	
+	
+				$fdata["FieldPermissions"] = true;
+
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+	
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty");
+// the end of search options settings
+
+
+
+
+	$tdatabookmarks["initiate"] = $fdata;
 
 
 $tables_data["bookmarks"]=&$tdatabookmarks;
@@ -905,7 +1036,7 @@ function createSqlQuery_bookmarks()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "phone,  name,  obs,  `user`,  ID";
+$proto0["m_strFieldList"] = "phone,  name,  obs,  `user`,  ID,  phone AS initiate";
 $proto0["m_strFrom"] = "FROM bookmarks";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1016,41 +1147,55 @@ $proto14["m_alias"] = "";
 $obj = new SQLFieldListItem($proto14);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto16=array();
-$proto16["m_link"] = "SQLL_MAIN";
-			$proto17=array();
-$proto17["m_strName"] = "bookmarks";
-$proto17["m_srcTableName"] = "bookmarks";
-$proto17["m_columns"] = array();
-$proto17["m_columns"][] = "ID";
-$proto17["m_columns"][] = "phone";
-$proto17["m_columns"][] = "name";
-$proto17["m_columns"][] = "obs";
-$proto17["m_columns"][] = "user";
-$obj = new SQLTable($proto17);
+						$proto16=array();
+			$obj = new SQLField(array(
+	"m_strName" => "phone",
+	"m_strTable" => "bookmarks",
+	"m_srcTableName" => "bookmarks"
+));
 
-$proto16["m_table"] = $obj;
-$proto16["m_sql"] = "bookmarks";
-$proto16["m_alias"] = "";
+$proto16["m_sql"] = "phone";
 $proto16["m_srcTableName"] = "bookmarks";
-$proto18=array();
-$proto18["m_sql"] = "";
-$proto18["m_uniontype"] = "SQLL_UNKNOWN";
+$proto16["m_expr"]=$obj;
+$proto16["m_alias"] = "initiate";
+$obj = new SQLFieldListItem($proto16);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto18=array();
+$proto18["m_link"] = "SQLL_MAIN";
+			$proto19=array();
+$proto19["m_strName"] = "bookmarks";
+$proto19["m_srcTableName"] = "bookmarks";
+$proto19["m_columns"] = array();
+$proto19["m_columns"][] = "ID";
+$proto19["m_columns"][] = "phone";
+$proto19["m_columns"][] = "name";
+$proto19["m_columns"][] = "obs";
+$proto19["m_columns"][] = "user";
+$obj = new SQLTable($proto19);
+
+$proto18["m_table"] = $obj;
+$proto18["m_sql"] = "bookmarks";
+$proto18["m_alias"] = "";
+$proto18["m_srcTableName"] = "bookmarks";
+$proto20=array();
+$proto20["m_sql"] = "";
+$proto20["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto18["m_column"]=$obj;
-$proto18["m_contained"] = array();
-$proto18["m_strCase"] = "";
-$proto18["m_havingmode"] = false;
-$proto18["m_inBrackets"] = false;
-$proto18["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto18);
+$proto20["m_column"]=$obj;
+$proto20["m_contained"] = array();
+$proto20["m_strCase"] = "";
+$proto20["m_havingmode"] = false;
+$proto20["m_inBrackets"] = false;
+$proto20["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto20);
 
-$proto16["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto16);
+$proto18["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto18);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1066,7 +1211,7 @@ $queryData_bookmarks = createSqlQuery_bookmarks();
 	
 		;
 
-					
+						
 
 $tdatabookmarks[".sqlquery"] = $queryData_bookmarks;
 

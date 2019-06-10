@@ -1,3 +1,0 @@
-myqsladdress|s:27:"wappchat.mysql.dbaas.com.br";MyURL|s:9:"/menu.php";OwnerID|N;bookmarks_search|i:0;bookmarks_key|a:1:{i:0;i:5;}bookmarks_orderFieldsList|s:109:"a:1:{i:0;O:10:"OrderField":3:{s:10:"fieldIndex";i:5;s:14:"orderDirection";s:3:"ASC";s:11:"userDefined";b:0;}}";bookmarks_sql|s:82:"SELECT
-`phone`, `name`, `obs`, `user`, `ID` 
- FROM `bookmarks`    ORDER BY 5 ASC";bookmarks_where|s:0:"";bookmarks_having|s:0:"";bookmarks_criteria|s:3:"and";bookmarks_order|s:15:" ORDER BY 5 ASC";bookmarks_joinFromPart|s:0:"";

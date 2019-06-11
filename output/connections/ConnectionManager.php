@@ -236,14 +236,14 @@ class ConnectionManager
 		$data = array();
 		$data["dbType"] = 0;
 		$data["connId"] = "wappchat_at_wappchat_mysql_dbaas_com_br";
-		$data["connName"] = "wappchat at wappchat.mysql.dbaas.com.br";
+		$data["connName"] = "wappdemo at wappdemo.mysql.dbaas.com.br";
 		$data["connStringType"] = "mysql";
-		$data["connectionString"] = "mysql;wappchat.mysql.dbaas.com.br;wappchat;Fokalove99;;wappchat;;1"; //currently unused
+		$data["connectionString"] = "mysql;wappdemo.mysql.dbaas.com.br;wappdemo;Fokalove99;;wappdemo;;1"; //currently unused
 		
-		$this->_connectionsIdByName["wappchat at wappchat.mysql.dbaas.com.br"] = "wappchat_at_wappchat_mysql_dbaas_com_br";
+		$this->_connectionsIdByName["wappdemo at wappdemo.mysql.dbaas.com.br"] = "wappchat_at_wappchat_mysql_dbaas_com_br";
 		
 		$data["connInfo"] = array();
-		$data["ODBCUID"] = "wappchat";
+		$data["ODBCUID"] = "wappdemo";
 		$data["ODBCPWD"] = "Fokalove99";
 		$data["leftWrap"] = "`";
 		$data["rightWrap"] = "`";
@@ -251,14 +251,14 @@ class ConnectionManager
 		$data["DBPath"] = "db"; //currently unused	
 		$data["useServerMapPath"] = 1; //currently unused
 		
-		$data["connInfo"][0] = "wappchat.mysql.dbaas.com.br";
-		$data["connInfo"][1] = "wappchat";
+		$data["connInfo"][0] = "wappdemo.mysql.dbaas.com.br";
+		$data["connInfo"][1] = "wappdemo";
 		$data["connInfo"][2] = "Fokalove99";
 		$data["connInfo"][3] = "";
-		$data["connInfo"][4] = "wappchat";
+		$data["connInfo"][4] = "wappdemo";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=wappchat.mysql.dbaas.com.br;Uid=wappchat;Pwd=Fokalove99;Database=wappchat;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=wappdemo.mysql.dbaas.com.br;Uid=wappdemo;Pwd=Fokalove99;Database=wappdemo;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;

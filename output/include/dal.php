@@ -59,11 +59,11 @@ class tDAL
 	{
 		if($this->lstTables)
 			return;
-		$this->lstTables[] = array("name" => "bookmarks", "varname" => "wappchat_at_wappchat_mysql_dbaas_com_br__bookmarks", "altvarname" => "bookmarks", "connId" => "wappchat_at_wappchat_mysql_dbaas_com_br", "schema" => "", "connName" => "wappchat at wappchat.mysql.dbaas.com.br");
-		$this->lstTables[] = array("name" => "bookmarks_inits", "varname" => "wappchat_at_wappchat_mysql_dbaas_com_br__bookmarks_inits", "altvarname" => "bookmarks_inits", "connId" => "wappchat_at_wappchat_mysql_dbaas_com_br", "schema" => "", "connName" => "wappchat at wappchat.mysql.dbaas.com.br");
-		$this->lstTables[] = array("name" => "lh_abstract_auto_responder", "varname" => "wappchat_at_wappchat_mysql_dbaas_com_br__lh_abstract_auto_responder", "altvarname" => "lh_abstract_auto_responder", "connId" => "wappchat_at_wappchat_mysql_dbaas_com_br", "schema" => "", "connName" => "wappchat at wappchat.mysql.dbaas.com.br");
-		$this->lstTables[] = array("name" => "lh_users", "varname" => "wappchat_at_wappchat_mysql_dbaas_com_br__lh_users", "altvarname" => "lh_users", "connId" => "wappchat_at_wappchat_mysql_dbaas_com_br", "schema" => "", "connName" => "wappchat at wappchat.mysql.dbaas.com.br");
-		$this->lstTables[] = array("name" => "lh_users_online_session", "varname" => "wappchat_at_wappchat_mysql_dbaas_com_br__lh_users_online_session", "altvarname" => "lh_users_online_session", "connId" => "wappchat_at_wappchat_mysql_dbaas_com_br", "schema" => "", "connName" => "wappchat at wappchat.mysql.dbaas.com.br");
+		$this->lstTables[] = array("name" => "bookmarks", "varname" => "wappchat_at_wappchat_mysql_dbaas_com_br__bookmarks", "altvarname" => "bookmarks", "connId" => "wappchat_at_wappchat_mysql_dbaas_com_br", "schema" => "", "connName" => "wappdemo at wappdemo.mysql.dbaas.com.br");
+		$this->lstTables[] = array("name" => "bookmarks_inits", "varname" => "wappchat_at_wappchat_mysql_dbaas_com_br__bookmarks_inits", "altvarname" => "bookmarks_inits", "connId" => "wappchat_at_wappchat_mysql_dbaas_com_br", "schema" => "", "connName" => "wappdemo at wappdemo.mysql.dbaas.com.br");
+		$this->lstTables[] = array("name" => "lh_abstract_auto_responder", "varname" => "wappchat_at_wappchat_mysql_dbaas_com_br__lh_abstract_auto_responder", "altvarname" => "lh_abstract_auto_responder", "connId" => "wappchat_at_wappchat_mysql_dbaas_com_br", "schema" => "", "connName" => "wappdemo at wappdemo.mysql.dbaas.com.br");
+		$this->lstTables[] = array("name" => "lh_users", "varname" => "wappchat_at_wappchat_mysql_dbaas_com_br__lh_users", "altvarname" => "lh_users", "connId" => "wappchat_at_wappchat_mysql_dbaas_com_br", "schema" => "", "connName" => "wappdemo at wappdemo.mysql.dbaas.com.br");
+		$this->lstTables[] = array("name" => "lh_users_online_session", "varname" => "wappchat_at_wappchat_mysql_dbaas_com_br__lh_users_online_session", "altvarname" => "lh_users_online_session", "connId" => "wappchat_at_wappchat_mysql_dbaas_com_br", "schema" => "", "connName" => "wappdemo at wappdemo.mysql.dbaas.com.br");
 	}
 
 	/**

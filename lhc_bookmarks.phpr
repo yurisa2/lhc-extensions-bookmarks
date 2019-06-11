@@ -3925,7 +3925,7 @@ GROUP BY `user`
 			)
 		);
 		$context  = stream_context_create($options);
-		$result = file_get_contents('http://sa2.com.br/whatsapp_lhc/wapp-LHC-Bridge/initiate_wapp_hook.php', false, $context);
+	//$result = file_get_contents('http://sa2.com.br/whatsapp_lhc/wapp-LHC-Bridge/initiate_wapp_hook.php', false, $context);
 		
 		
 
@@ -5272,7 +5272,7 @@ FROM bookmarks_inits</m_strSQL>
 			</m_arrGroupsPerPage>
 			<m_bHighlightSearchResults>1</m_bHighlightSearchResults>
 			<m_bFlexibleSearch>1</m_bFlexibleSearch>
-			<m_nPartialBuildState>1</m_nPartialBuildState>
+			<m_nPartialBuildState>0</m_nPartialBuildState>
 			<m_bSaveSearches>0</m_bSaveSearches>
 			<m_bWarnLeavingPages>1</m_bWarnLeavingPages>
 			<m_pDashboard>
@@ -30175,6 +30175,83 @@ phone AS initiate</m_strFieldList>
 			</v>
 			<v>
 				<schema></schema>
+				<name>bookmarks_inits</name>
+				<type>0</type>
+				<dbfields>
+					<dbfield>
+						<name>id_init</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<oraSequence></oraSequence>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>date</name>
+						<type>135</type>
+						<typeName>datetime</typeName>
+						<size>0</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<oraSequence></oraSequence>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>phone</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>50</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<oraSequence></oraSequence>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>message</name>
+						<type>201</type>
+						<typeName>mediumtext</typeName>
+						<size>0</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<oraSequence></oraSequence>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>user</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>50</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<oraSequence></oraSequence>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys>
+					<dbkey>id_init</dbkey>
+				</dbkeys>
+				<dbfkeys />
+				<pbclean>0</pbclean>
+			</v>
+			<v>
+				<schema></schema>
 				<name>lh_abstract_auto_responder</name>
 				<type>0</type>
 				<dbfields>
@@ -31280,8 +31357,8 @@ phone AS initiate</m_strFieldList>
 	<m_arrConnections>
 		<v>
 			<m_strID>wappchat_at_wappchat_mysql_dbaas_com_br</m_strID>
-			<m_strName>wappchat at wappchat.mysql.dbaas.com.br</m_strName>
-			<m_strConnectionString>mysql;wappchat.mysql.dbaas.com.br;wappchat;Fokalove99;;wappchat;;1</m_strConnectionString>
+			<m_strName>wappdemo at wappdemo.mysql.dbaas.com.br</m_strName>
+			<m_strConnectionString>mysql;wappdemo.mysql.dbaas.com.br;wappdemo;Fokalove99;;wappdemo;;1</m_strConnectionString>
 			<m_nDatabaseType>0</m_nDatabaseType>
 			<m_cLeftWrap>`</m_cLeftWrap>
 			<m_cRightWrap>`</m_cRightWrap>
@@ -31291,15 +31368,15 @@ phone AS initiate</m_strFieldList>
 			<m_strCustomDBConnection />
 			<m_CustomDBConnections />
 			<m_connStringType>mysql</m_connStringType>
-			<m_strConnectInfo1>wappchat.mysql.dbaas.com.br</m_strConnectInfo1>
-			<m_strConnectInfo2>wappchat</m_strConnectInfo2>
+			<m_strConnectInfo1>wappdemo.mysql.dbaas.com.br</m_strConnectInfo1>
+			<m_strConnectInfo2>wappdemo</m_strConnectInfo2>
 			<m_strConnectInfo3>Fokalove99</m_strConnectInfo3>
 			<m_strConnectInfo4></m_strConnectInfo4>
-			<m_strConnectInfo5>wappchat</m_strConnectInfo5>
+			<m_strConnectInfo5>wappdemo</m_strConnectInfo5>
 			<m_strConnectInfo6></m_strConnectInfo6>
 			<m_strConnectInfo7>1</m_strConnectInfo7>
-			<m_strODBCString>DRIVER={MySQL ODBC 3.51 Driver};Server=wappchat.mysql.dbaas.com.br;Uid=wappchat;Pwd=Fokalove99;Database=wappchat;OPTION=3</m_strODBCString>
-			<m_strODBCUID>wappchat</m_strODBCUID>
+			<m_strODBCString>DRIVER={MySQL ODBC 3.51 Driver};Server=wappdemo.mysql.dbaas.com.br;Uid=wappdemo;Pwd=Fokalove99;Database=wappdemo;OPTION=3</m_strODBCString>
+			<m_strODBCUID>wappdemo</m_strODBCUID>
 			<m_strODBCPWD>Fokalove99</m_strODBCPWD>
 			<dbtables>
 				<v>
@@ -32817,8 +32894,8 @@ phone AS initiate</m_strFieldList>
 		<m_bUseBuiltInMailer>0</m_bUseBuiltInMailer>
 	</Registration>
 	<BuildInfo>
-		<m_nBuildTimeLow>-1753079440</m_nBuildTimeLow>
-		<m_nBuildTimeHigh>30744389</m_nBuildTimeHigh>
+		<m_nBuildTimeLow>1830394832</m_nBuildTimeLow>
+		<m_nBuildTimeHigh>30744558</m_nBuildTimeHigh>
 		<nonProcessFiles />
 		<m_bCompressJs>1</m_bCompressJs>
 		<builtFiles>
@@ -35451,7 +35528,7 @@ phone AS initiate</m_strFieldList>
 	<m_bWebReports>0</m_bWebReports>
 	<m_strWRConnectionID></m_strWRConnectionID>
 	<m_strWRAdminPassword>webreports</m_strWRAdminPassword>
-	<m_projectBuildNumber>8</m_projectBuildNumber>
+	<m_projectBuildNumber>11</m_projectBuildNumber>
 	<m_FTPlocation />
 	<m_FrontPagelocation />
 	<FTPFiles />
@@ -35465,7 +35542,7 @@ phone AS initiate</m_strFieldList>
 	<m_nDefaultLastYearFactor>10</m_nDefaultLastYearFactor>
 	<m_bBuildMobile>0</m_bBuildMobile>
 	<m_bDisplayDesktop>0</m_bDisplayDesktop>
-	<m_projectCRC>-1324175078</m_projectCRC>
+	<m_projectCRC>689776918</m_projectCRC>
 	<viewPluginsWithJS />
 	<m_projectGUID>{64FFBE60-C56A-4f53-85EF-829D7A32391C}</m_projectGUID>
 	<m_EventsCSProjectGUID>{64FFBE60-C56A-4f53-85EF-829D7A32391D}</m_EventsCSProjectGUID>

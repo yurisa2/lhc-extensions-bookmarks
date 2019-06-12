@@ -920,7 +920,7 @@ $tdatabookmarks[".printFields"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "");
+	$vdata = array("ViewFormat" => "Custom");
 
 	
 	
@@ -933,8 +933,7 @@ $tdatabookmarks[".printFields"] = array();
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
+	
 	$fdata["ViewFormats"]["view"] = $vdata;
 //  End View Formats
 

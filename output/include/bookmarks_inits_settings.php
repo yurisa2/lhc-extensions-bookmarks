@@ -25,9 +25,9 @@ if(mlang_getcurrentlang()=="Portuguese(Brazil)")
 	$fieldToolTipsbookmarks_inits["Portuguese(Brazil)"]["id_init"] = "";
 	$fieldLabelsbookmarks_inits["Portuguese(Brazil)"]["date"] = "Date";
 	$fieldToolTipsbookmarks_inits["Portuguese(Brazil)"]["date"] = "";
-	$fieldLabelsbookmarks_inits["Portuguese(Brazil)"]["phone"] = "Phone";
+	$fieldLabelsbookmarks_inits["Portuguese(Brazil)"]["phone"] = "Telefone (Whatsapp)";
 	$fieldToolTipsbookmarks_inits["Portuguese(Brazil)"]["phone"] = "";
-	$fieldLabelsbookmarks_inits["Portuguese(Brazil)"]["message"] = "Mensagens";
+	$fieldLabelsbookmarks_inits["Portuguese(Brazil)"]["message"] = "Mensagem";
 	$fieldToolTipsbookmarks_inits["Portuguese(Brazil)"]["message"] = "";
 	$fieldLabelsbookmarks_inits["Portuguese(Brazil)"]["user"] = "User";
 	$fieldToolTipsbookmarks_inits["Portuguese(Brazil)"]["user"] = "";
@@ -547,38 +547,11 @@ $tdatabookmarks_inits[".printFields"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Lookup wizard");
+	$edata = array("EditFormat" => "Text field");
 
 	
 	
 
-// Begin Lookup settings
-				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "bookmarks";
-		$edata["autoCompleteFieldsOnEdit"] = 0;
-	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 1;
-	
-	
-		
-	$edata["LinkField"] = "phone";
-	$edata["LinkFieldType"] = 0;
-	$edata["DisplayField"] = "concat(name, ' - ',phone)";
-
-		$edata["CustomDisplay"] = "true";
-
-	$edata["LookupOrderBy"] = "";
-
-	
-	
-		$edata["AllowToAdd"] = true;
-
-	
-
-	
-	
-	
-// End Lookup Settings
 
 
 	
@@ -593,8 +566,11 @@ $tdatabookmarks_inits[".printFields"] = array();
 	
 	
 	
-	
-	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=50";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -602,7 +578,8 @@ $tdatabookmarks_inits[".printFields"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 	
-	
+		$edata["autoUpdatable"] = true;
+
 	//	End validation
 
 	

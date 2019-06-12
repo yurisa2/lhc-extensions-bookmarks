@@ -766,6 +766,11 @@ function CustomExpression($value, $data, $field, $ptype, $table="")
 	global $strTableName;
 	if(!$table)
 		$table = $strTableName;
+				if($table=="bookmarks" && $field=="initiate")
+	{
+		$value = "<a href =bookmarks_inits_add.php?phone=$value> INICIAR CHAT </a>";;
+		return $value;
+	}
 				if($table=="bookmarks_users" && $field=="Listar")
 	{
 		  $value="<a href=bookmarks_list.php?qs=$value> Lista Contatos </a>";;
@@ -826,7 +831,7 @@ function GetDefaultValue($field, $ptype, $table="")
 	}
 				if($table=="bookmarks_inits" && $field=="phone")
 	{
-		return 55;
+		return $_GET["phone"];
 	}
 				if($table=="bookmarks_inits" && $field=="user")
 	{
@@ -854,6 +859,10 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 				if($table=="bookmarks_inits" && $field=="date")
 	{
 		return now();
+	}
+				if($table=="bookmarks_inits" && $field=="phone")
+	{
+		return $_GET["phone"];
 	}
 	return "";
 }

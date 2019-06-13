@@ -41,7 +41,7 @@ function AfterAdd(&$values, &$keys, $inline, &$pageObject)
 			)
 		);
 		$context  = stream_context_create($options);
-	//$result = file_get_contents('http://sa2.com.br/whatsapp_lhc/wapp-LHC-Bridge/initiate_wapp_hook.php', false, $context);
+	$result = file_get_contents('http://sa2.com.br/whatsapp_lhc/wapp-LHC-Bridge/initiate_wapp_hook.php', false, $context);
 		
 		
 

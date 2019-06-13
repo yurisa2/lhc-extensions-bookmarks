@@ -1270,7 +1270,7 @@ phone AS initiate</m_sqlHead>
 					<m_strName>initiate</m_strName>
 					<m_strSQLExpression>phone</m_strSQLExpression>
 					<m_strSQLAlias>initiate</m_strSQLAlias>
-					<m_strTotalsType></m_strTotalsType>
+					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
 					<m_bListPage>1</m_bListPage>
@@ -1301,7 +1301,7 @@ phone AS initiate</m_sqlHead>
 					<m_nFilterOrder>0</m_nFilterOrder>
 					<m_nDataType>200</m_nDataType>
 					<m_bAutoInc>0</m_bAutoInc>
-					<m_strOraSequenceName></m_strOraSequenceName>
+					<m_strOraSequenceName />
 					<m_bReportPage>1</m_bReportPage>
 					<m_nReportPageOrder>6</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
@@ -1323,8 +1323,8 @@ phone AS initiate</m_sqlHead>
 							<m_nThumbHeight>72</m_nThumbHeight>
 							<m_bhlNewWindow>0</m_bhlNewWindow>
 							<m_nhlDisplay>0</m_nhlDisplay>
-							<m_strhlParam></m_strhlParam>
-							<m_strFileCustomExpr></m_strFileCustomExpr>
+							<m_strhlParam />
+							<m_strFileCustomExpr />
 							<m_bShowThumbnail>0</m_bShowThumbnail>
 							<m_bShowFileSize>0</m_bShowFileSize>
 							<m_bShowIcon>1</m_bShowIcon>
@@ -1334,20 +1334,20 @@ phone AS initiate</m_sqlHead>
 							<m_nMapWidth>300</m_nMapWidth>
 							<m_nMapHeight>225</m_nMapHeight>
 							<m_sMapZoom>15</m_sMapZoom>
-							<m_sAddressField></m_sAddressField>
-							<m_sLatField></m_sLatField>
-							<m_sLonField></m_sLonField>
-							<m_sMapDescription></m_sMapDescription>
-							<m_strhlPrefix></m_strhlPrefix>
-							<m_strFilename></m_strFilename>
+							<m_sAddressField />
+							<m_sLatField />
+							<m_sLonField />
+							<m_sMapDescription />
+							<m_strhlPrefix />
+							<m_strFilename />
 							<m_strCustomExpr>$value = "&lt;a href =bookmarks_inits_add.php?phone=$value&gt; INICIAR CHAT &lt;/a&gt;";</m_strCustomExpr>
-							<m_strMarkerIcon></m_strMarkerIcon>
+							<m_strMarkerIcon />
 							<m_bUseMarkerIconExpr>0</m_bUseMarkerIconExpr>
 							<m_linkWord>
 								<text>Link</text>
 								<nameType>Text</nameType>
 							</m_linkWord>
-							<m_strTitleField></m_strTitleField>
+							<m_strTitleField />
 							<m_nVideoWidth>300</m_nVideoWidth>
 							<m_nVideoHeight>200</m_nVideoHeight>
 							<m_bRewindEnabled>0</m_bRewindEnabled>
@@ -1355,7 +1355,7 @@ phone AS initiate</m_sqlHead>
 							<m_bFieldContainsFileURL>0</m_bFieldContainsFileURL>
 							<m_strViewFormat>Custom</m_strViewFormat>
 							<m_page>view</m_page>
-							<m_pluginInitString></m_pluginInitString>
+							<m_pluginInitString />
 							<m_strDotNetLanguage>cs</m_strDotNetLanguage>
 						</v>
 					</m_viewFormats>
@@ -1367,11 +1367,11 @@ phone AS initiate</m_sqlHead>
 							<m_nSelectSize>1</m_nSelectSize>
 							<m_nCols>200</m_nCols>
 							<m_nRows>100</m_nRows>
-							<m_strDefaultValue></m_strDefaultValue>
-							<m_strAutoUpdateValue></m_strAutoUpdateValue>
+							<m_strDefaultValue />
+							<m_strAutoUpdateValue />
 							<m_bAutoUpdate>0</m_bAutoUpdate>
-							<m_strValidateAs></m_strValidateAs>
-							<m_strRegex></m_strRegex>
+							<m_strValidateAs />
+							<m_strRegex />
 							<m_strRegexMessage>
 								<text>The value is invalid</text>
 								<nameType>Text</nameType>
@@ -1392,11 +1392,11 @@ phone AS initiate</m_sqlHead>
 							<m_pLookupObj>
 								<m_nLookupType>1</m_nLookupType>
 								<m_arrListOfValues />
-								<m_strTable></m_strTable>
-								<m_strConnectionID></m_strConnectionID>
-								<m_strLinkField></m_strLinkField>
-								<m_strDisplayField></m_strDisplayField>
-								<m_strOrderBy></m_strOrderBy>
+								<m_strTable />
+								<m_strConnectionID />
+								<m_strLinkField />
+								<m_strDisplayField />
+								<m_strOrderBy />
 								<m_bDesc>0</m_bDesc>
 								<m_bUnique>0</m_bUnique>
 								<m_bAllowToAdd>0</m_bAllowToAdd>
@@ -1404,7 +1404,7 @@ phone AS initiate</m_sqlHead>
 								<m_nControlType>0</m_nControlType>
 								<m_bUseCategory>0</m_bUseCategory>
 								<m_arrDependentFields />
-								<m_strWhere></m_strWhere>
+								<m_strWhere />
 								<m_strWhereDotNetLanguage>cs</m_strWhereDotNetLanguage>
 								<m_bCustomDisplay>0</m_bCustomDisplay>
 								<m_nLinkFieldType>0</m_nLinkFieldType>
@@ -1416,13 +1416,13 @@ phone AS initiate</m_sqlHead>
 							<m_nLastYearFactor>10</m_nLastYearFactor>
 							<m_strEditFormat>Text field</m_strEditFormat>
 							<m_page>edit</m_page>
-							<m_strEditMask></m_strEditMask>
+							<m_strEditMask />
 							<m_MaxNumberOfFiles>1</m_MaxNumberOfFiles>
 							<m_MaxFileSize>0</m_MaxFileSize>
 							<m_TotalFilesSize>0</m_TotalFilesSize>
 							<m_bAutoupload>0</m_bAutoupload>
 							<m_allowedFileTypes />
-							<m_pluginInitString></m_pluginInitString>
+							<m_pluginInitString />
 							<m_strDotNetLanguage>cs</m_strDotNetLanguage>
 							<m_strAutoUpdateDotNetLanguage>cs</m_strAutoUpdateDotNetLanguage>
 							<m_bDenyDuplicates>0</m_bDenyDuplicates>
@@ -1441,15 +1441,15 @@ phone AS initiate</m_sqlHead>
 					<m_bUploadCodeExpression>0</m_bUploadCodeExpression>
 					<m_bDeleteFile>0</m_bDeleteFile>
 					<m_strUploadFolder>files</m_strUploadFolder>
-					<m_codeUploadFolder></m_codeUploadFolder>
+					<m_codeUploadFolder />
 					<m_strCodeUploadFolderLanguage>cs</m_strCodeUploadFolderLanguage>
 					<m_bAbsolute>0</m_bAbsolute>
 					<m_bFiltered>0</m_bFiltered>
-					<m_strSearchOption></m_strSearchOption>
+					<m_strSearchOption />
 					<m_bSearchRequired>0</m_bSearchRequired>
 					<m_pFilterFormatObj>
 						<m_strFilterFormat>Values list</m_strFilterFormat>
-						<m_strFilterTotalsField></m_strFilterTotalsField>
+						<m_strFilterTotalsField />
 						<m_nFilterMultiselect>0</m_nFilterMultiselect>
 						<m_nFilterTotals>0</m_nFilterTotals>
 						<m_bHideControl>0</m_bHideControl>
@@ -1480,8 +1480,8 @@ phone AS initiate</m_sqlHead>
 					<m_bMasterChartPage>0</m_bMasterChartPage>
 					<m_bMasterReportPage>1</m_bMasterReportPage>
 					<m_bMasterReportPrintPage>1</m_bMasterReportPrintPage>
-					<m_strParentFilter></m_strParentFilter>
-					<m_strChildFilter></m_strChildFilter>
+					<m_strParentFilter />
+					<m_strChildFilter />
 					<m_arrListOfDevicesWithHiddenFields />
 				</v>
 			</m_arrFieldObj>
@@ -3925,7 +3925,7 @@ GROUP BY `user`
 			)
 		);
 		$context  = stream_context_create($options);
-	//$result = file_get_contents('http://sa2.com.br/whatsapp_lhc/wapp-LHC-Bridge/initiate_wapp_hook.php', false, $context);
+	$result = file_get_contents('http://sa2.com.br/whatsapp_lhc/wapp-LHC-Bridge/initiate_wapp_hook.php', false, $context);
 		
 		
 
@@ -4548,8 +4548,8 @@ FROM bookmarks_inits</m_strSQL>
 					<m_strTable>bookmarks_inits</m_strTable>
 					<m_strName>phone</m_strName>
 					<m_strSQLExpression>phone</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
-					<m_strTotalsType></m_strTotalsType>
+					<m_strSQLAlias />
+					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
 					<m_bListPage>0</m_bListPage>
@@ -4580,7 +4580,7 @@ FROM bookmarks_inits</m_strSQL>
 					<m_nFilterOrder>0</m_nFilterOrder>
 					<m_nDataType>200</m_nDataType>
 					<m_bAutoInc>0</m_bAutoInc>
-					<m_strOraSequenceName></m_strOraSequenceName>
+					<m_strOraSequenceName />
 					<m_bReportPage>1</m_bReportPage>
 					<m_nReportPageOrder>3</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
@@ -4602,8 +4602,8 @@ FROM bookmarks_inits</m_strSQL>
 							<m_nThumbHeight>72</m_nThumbHeight>
 							<m_bhlNewWindow>0</m_bhlNewWindow>
 							<m_nhlDisplay>0</m_nhlDisplay>
-							<m_strhlParam></m_strhlParam>
-							<m_strFileCustomExpr></m_strFileCustomExpr>
+							<m_strhlParam />
+							<m_strFileCustomExpr />
 							<m_bShowThumbnail>0</m_bShowThumbnail>
 							<m_bShowFileSize>0</m_bShowFileSize>
 							<m_bShowIcon>1</m_bShowIcon>
@@ -4613,28 +4613,28 @@ FROM bookmarks_inits</m_strSQL>
 							<m_nMapWidth>300</m_nMapWidth>
 							<m_nMapHeight>225</m_nMapHeight>
 							<m_sMapZoom>15</m_sMapZoom>
-							<m_sAddressField></m_sAddressField>
-							<m_sLatField></m_sLatField>
-							<m_sLonField></m_sLonField>
-							<m_sMapDescription></m_sMapDescription>
-							<m_strhlPrefix></m_strhlPrefix>
-							<m_strFilename></m_strFilename>
-							<m_strCustomExpr></m_strCustomExpr>
-							<m_strMarkerIcon></m_strMarkerIcon>
+							<m_sAddressField />
+							<m_sLatField />
+							<m_sLonField />
+							<m_sMapDescription />
+							<m_strhlPrefix />
+							<m_strFilename />
+							<m_strCustomExpr />
+							<m_strMarkerIcon />
 							<m_bUseMarkerIconExpr>0</m_bUseMarkerIconExpr>
 							<m_linkWord>
 								<text>Link</text>
 								<nameType>Text</nameType>
 							</m_linkWord>
-							<m_strTitleField></m_strTitleField>
+							<m_strTitleField />
 							<m_nVideoWidth>300</m_nVideoWidth>
 							<m_nVideoHeight>200</m_nVideoHeight>
 							<m_bRewindEnabled>0</m_bRewindEnabled>
 							<m_nDecimalDigits>2</m_nDecimalDigits>
 							<m_bFieldContainsFileURL>0</m_bFieldContainsFileURL>
-							<m_strViewFormat></m_strViewFormat>
+							<m_strViewFormat />
 							<m_page>view</m_page>
-							<m_pluginInitString></m_pluginInitString>
+							<m_pluginInitString />
 							<m_strDotNetLanguage>cs</m_strDotNetLanguage>
 						</v>
 					</m_viewFormats>
@@ -4649,8 +4649,8 @@ FROM bookmarks_inits</m_strSQL>
 							<m_strDefaultValue>$_GET["phone"]</m_strDefaultValue>
 							<m_strAutoUpdateValue>$_GET["phone"]</m_strAutoUpdateValue>
 							<m_bAutoUpdate>0</m_bAutoUpdate>
-							<m_strValidateAs></m_strValidateAs>
-							<m_strRegex></m_strRegex>
+							<m_strValidateAs />
+							<m_strRegex />
 							<m_strRegexMessage>
 								<text>The value is invalid</text>
 								<nameType>Text</nameType>
@@ -4675,7 +4675,7 @@ FROM bookmarks_inits</m_strSQL>
 								<m_strConnectionID>wappchat_at_wappchat_mysql_dbaas_com_br</m_strConnectionID>
 								<m_strLinkField>phone</m_strLinkField>
 								<m_strDisplayField>concat(name, ' - ',phone)</m_strDisplayField>
-								<m_strOrderBy></m_strOrderBy>
+								<m_strOrderBy />
 								<m_bDesc>0</m_bDesc>
 								<m_bUnique>0</m_bUnique>
 								<m_bAllowToAdd>1</m_bAllowToAdd>
@@ -4683,7 +4683,7 @@ FROM bookmarks_inits</m_strSQL>
 								<m_nControlType>1</m_nControlType>
 								<m_bUseCategory>0</m_bUseCategory>
 								<m_arrDependentFields />
-								<m_strWhere></m_strWhere>
+								<m_strWhere />
 								<m_strWhereDotNetLanguage>cs</m_strWhereDotNetLanguage>
 								<m_bCustomDisplay>1</m_bCustomDisplay>
 								<m_nLinkFieldType>0</m_nLinkFieldType>
@@ -4695,13 +4695,13 @@ FROM bookmarks_inits</m_strSQL>
 							<m_nLastYearFactor>10</m_nLastYearFactor>
 							<m_strEditFormat>Text field</m_strEditFormat>
 							<m_page>edit</m_page>
-							<m_strEditMask></m_strEditMask>
+							<m_strEditMask />
 							<m_MaxNumberOfFiles>1</m_MaxNumberOfFiles>
 							<m_MaxFileSize>0</m_MaxFileSize>
 							<m_TotalFilesSize>0</m_TotalFilesSize>
 							<m_bAutoupload>0</m_bAutoupload>
 							<m_allowedFileTypes />
-							<m_pluginInitString></m_pluginInitString>
+							<m_pluginInitString />
 							<m_strDotNetLanguage>cs</m_strDotNetLanguage>
 							<m_strAutoUpdateDotNetLanguage>cs</m_strAutoUpdateDotNetLanguage>
 							<m_bDenyDuplicates>0</m_bDenyDuplicates>
@@ -4720,7 +4720,7 @@ FROM bookmarks_inits</m_strSQL>
 					<m_bUploadCodeExpression>0</m_bUploadCodeExpression>
 					<m_bDeleteFile>0</m_bDeleteFile>
 					<m_strUploadFolder>files</m_strUploadFolder>
-					<m_codeUploadFolder></m_codeUploadFolder>
+					<m_codeUploadFolder />
 					<m_strCodeUploadFolderLanguage>cs</m_strCodeUploadFolderLanguage>
 					<m_bAbsolute>0</m_bAbsolute>
 					<m_bFiltered>0</m_bFiltered>
@@ -4728,7 +4728,7 @@ FROM bookmarks_inits</m_strSQL>
 					<m_bSearchRequired>0</m_bSearchRequired>
 					<m_pFilterFormatObj>
 						<m_strFilterFormat>Values list</m_strFilterFormat>
-						<m_strFilterTotalsField></m_strFilterTotalsField>
+						<m_strFilterTotalsField />
 						<m_nFilterMultiselect>0</m_nFilterMultiselect>
 						<m_nFilterTotals>0</m_nFilterTotals>
 						<m_bHideControl>0</m_bHideControl>
@@ -4759,8 +4759,8 @@ FROM bookmarks_inits</m_strSQL>
 					<m_bMasterChartPage>0</m_bMasterChartPage>
 					<m_bMasterReportPage>1</m_bMasterReportPage>
 					<m_bMasterReportPrintPage>1</m_bMasterReportPrintPage>
-					<m_strParentFilter></m_strParentFilter>
-					<m_strChildFilter></m_strChildFilter>
+					<m_strParentFilter />
+					<m_strChildFilter />
 					<m_arrListOfDevicesWithHiddenFields />
 				</v>
 				<v>
@@ -32687,8 +32687,8 @@ phone AS initiate</m_strFieldList>
 				<m_strLanguage>Portuguese(Brazil)</m_strLanguage>
 				<m_arrTableLabels>
 					<v>
-						<m_strTableName></m_strTableName>
-						<m_strTableLabel></m_strTableLabel>
+						<m_strTableName />
+						<m_strTableLabel />
 						<m_arrFieldLabels />
 						<m_arrPageTitleLabels />
 					</v>
@@ -32709,7 +32709,7 @@ phone AS initiate</m_strFieldList>
 							<v>
 								<m_strField>obs</m_strField>
 								<m_strLabel>Obs</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>user</m_strField>
@@ -32719,19 +32719,19 @@ phone AS initiate</m_strFieldList>
 							<v>
 								<m_strField>ID</m_strField>
 								<m_strLabel>ID</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>initiate</m_strField>
 								<m_strLabel>Initiate</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 						</m_arrFieldLabels>
 						<m_arrPageTitleLabels />
 					</v>
 					<v>
-						<m_strTableName></m_strTableName>
-						<m_strTableLabel></m_strTableLabel>
+						<m_strTableName />
+						<m_strTableLabel />
 						<m_arrFieldLabels />
 						<m_arrPageTitleLabels />
 					</v>
@@ -32742,12 +32742,12 @@ phone AS initiate</m_strFieldList>
 							<v>
 								<m_strField>user</m_strField>
 								<m_strLabel>Usuario</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>Listar</m_strField>
 								<m_strLabel>Listar Telefones</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 						</m_arrFieldLabels>
 						<m_arrPageTitleLabels />
@@ -32759,27 +32759,27 @@ phone AS initiate</m_strFieldList>
 							<v>
 								<m_strField>id_init</m_strField>
 								<m_strLabel>Id Init</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>date</m_strField>
 								<m_strLabel>Date</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>phone</m_strField>
 								<m_strLabel>Telefone (Whatsapp)</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>message</m_strField>
 								<m_strLabel>Mensagem</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>user</m_strField>
 								<m_strLabel>User</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 						</m_arrFieldLabels>
 						<m_arrPageTitleLabels />
@@ -32787,11 +32787,11 @@ phone AS initiate</m_strFieldList>
 				</m_arrTableLabels>
 			</v>
 			<v>
-				<m_strLanguage></m_strLanguage>
+				<m_strLanguage />
 				<m_arrTableLabels>
 					<v>
-						<m_strTableName></m_strTableName>
-						<m_strTableLabel></m_strTableLabel>
+						<m_strTableName />
+						<m_strTableLabel />
 						<m_arrFieldLabels />
 						<m_arrPageTitleLabels />
 					</v>
@@ -32802,7 +32802,7 @@ phone AS initiate</m_strFieldList>
 							<v>
 								<m_strField>initiate</m_strField>
 								<m_strLabel>Initiate</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 						</m_arrFieldLabels>
 						<m_arrPageTitleLabels />
@@ -32814,7 +32814,7 @@ phone AS initiate</m_strFieldList>
 							<v>
 								<m_strField>Listar</m_strField>
 								<m_strLabel>Listar</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 						</m_arrFieldLabels>
 						<m_arrPageTitleLabels />
@@ -32826,27 +32826,27 @@ phone AS initiate</m_strFieldList>
 							<v>
 								<m_strField>id_init</m_strField>
 								<m_strLabel>Id Init</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>date</m_strField>
 								<m_strLabel>Date</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>phone</m_strField>
 								<m_strLabel>Phone</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>message</m_strField>
 								<m_strLabel>Message</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>user</m_strField>
 								<m_strLabel>User</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 						</m_arrFieldLabels>
 						<m_arrPageTitleLabels />
@@ -32894,8 +32894,8 @@ phone AS initiate</m_strFieldList>
 		<m_bUseBuiltInMailer>0</m_bUseBuiltInMailer>
 	</Registration>
 	<BuildInfo>
-		<m_nBuildTimeLow>691514240</m_nBuildTimeLow>
-		<m_nBuildTimeHigh>30744935</m_nBuildTimeHigh>
+		<m_nBuildTimeLow>893130144</m_nBuildTimeLow>
+		<m_nBuildTimeHigh>30745111</m_nBuildTimeHigh>
 		<nonProcessFiles />
 		<m_bCompressJs>1</m_bCompressJs>
 		<builtFiles>
@@ -35433,7 +35433,7 @@ phone AS initiate</m_strFieldList>
 			</v>
 			<v>
 				<filename>C:\Bitnami\wampstack-7.1.20-1\apache2\htdocs\lhc_bookmarks\output\templates\bookmarks_inits_add.htm</filename>
-				<source>C:\Bitnami\wampstack-7.1.20-1\apache2\htdocs\lhc_bookmarks\tmp\visual\bookmarks_inits_add.htm</source>
+				<source>C:\Program Files (x86)\PHPRunner9.0\templates\layouts\add_bootstrap.ly</source>
 			</v>
 			<v>
 				<filename>C:\Bitnami\wampstack-7.1.20-1\apache2\htdocs\lhc_bookmarks\output\include\bookmarks_events.php</filename>
@@ -35464,7 +35464,7 @@ phone AS initiate</m_strFieldList>
 	<m_controlLinks />
 	<m_deletedLinks />
 	<m_bDynamicPermissions>0</m_bDynamicPermissions>
-	<m_strUGPrefix></m_strUGPrefix>
+	<m_strUGPrefix />
 	<m_strUGRights>ugrights</m_strUGRights>
 	<m_strUGMembers>ugmembers</m_strUGMembers>
 	<m_strUGGroups>uggroups</m_strUGGroups>
@@ -35475,8 +35475,8 @@ phone AS initiate</m_strFieldList>
 	<m_strGoogleApiKey />
 	<m_bCreateLoginPage>0</m_bCreateLoginPage>
 	<m_nLoginMethod>-1</m_nLoginMethod>
-	<m_strUserName></m_strUserName>
-	<m_strPassword></m_strPassword>
+	<m_strUserName />
+	<m_strPassword />
 	<m_strLoginTable>lh_users</m_strLoginTable>
 	<m_strLoginTableConnectionID>wappchat_at_wappchat_mysql_dbaas_com_br</m_strLoginTableConnectionID>
 	<m_strUserNameField>username</m_strUserNameField>
@@ -35485,8 +35485,8 @@ phone AS initiate</m_strFieldList>
 	<m_strUserGroupField />
 	<m_bGuestLogin>0</m_bGuestLogin>
 	<m_bFacebookLogin>0</m_bFacebookLogin>
-	<m_strFacebookAppId></m_strFacebookAppId>
-	<m_strFacebookSecretId></m_strFacebookSecretId>
+	<m_strFacebookAppId />
+	<m_strFacebookSecretId />
 	<m_arrEncryptInfo>
 		<v>
 			<m_strConnID>wappchat_at_wappchat_mysql_dbaas_com_br</m_strConnID>
@@ -35497,12 +35497,12 @@ phone AS initiate</m_strFieldList>
 			<m_strSQLServerCertificate />
 		</v>
 	</m_arrEncryptInfo>
-	<m_ADDomain></m_ADDomain>
-	<m_ADServer></m_ADServer>
+	<m_ADDomain />
+	<m_ADServer />
 	<m_ADAdmins />
 	<m_ADSingleSignOn>0</m_ADSingleSignOn>
-	<m_ADLogin></m_ADLogin>
-	<m_ADPassword></m_ADPassword>
+	<m_ADLogin />
+	<m_ADPassword />
 	<m_bPre72Project>0</m_bPre72Project>
 	<m_bAlreadyBuilt>1</m_bAlreadyBuilt>
 	<m_nLoginForm>0</m_nLoginForm>
@@ -35526,9 +35526,9 @@ phone AS initiate</m_strFieldList>
 	<m_bSection508Compatibility>0</m_bSection508Compatibility>
 	<m_bOldMysqlLib>0</m_bOldMysqlLib>
 	<m_bWebReports>0</m_bWebReports>
-	<m_strWRConnectionID></m_strWRConnectionID>
+	<m_strWRConnectionID />
 	<m_strWRAdminPassword>webreports</m_strWRAdminPassword>
-	<m_projectBuildNumber>16</m_projectBuildNumber>
+	<m_projectBuildNumber>17</m_projectBuildNumber>
 	<m_FTPlocation />
 	<m_FrontPagelocation />
 	<FTPFiles />
@@ -35542,7 +35542,7 @@ phone AS initiate</m_strFieldList>
 	<m_nDefaultLastYearFactor>10</m_nDefaultLastYearFactor>
 	<m_bBuildMobile>0</m_bBuildMobile>
 	<m_bDisplayDesktop>0</m_bDisplayDesktop>
-	<m_projectCRC>-1511021057</m_projectCRC>
+	<m_projectCRC>-960248110</m_projectCRC>
 	<viewPluginsWithJS />
 	<m_projectGUID>{64FFBE60-C56A-4f53-85EF-829D7A32391C}</m_projectGUID>
 	<m_EventsCSProjectGUID>{64FFBE60-C56A-4f53-85EF-829D7A32391D}</m_EventsCSProjectGUID>
@@ -35566,22 +35566,22 @@ phone AS initiate</m_strFieldList>
 						<nameType>Text</nameType>
 					</name>
 					<comments>
-						<text></text>
+						<text />
 						<nameType>Text</nameType>
 					</comments>
 					<id>1</id>
 					<parent>0</parent>
-					<style></style>
-					<href></href>
-					<params></params>
-					<table></table>
-					<iconName></iconName>
+					<style />
+					<href />
+					<params />
+					<table />
+					<iconName />
 					<iconType>0</iconType>
 					<type>Group</type>
 					<linkType>None</linkType>
 					<pageType>List</pageType>
 					<openType>None</openType>
-					<color></color>
+					<color />
 				</MenuNode>
 				<MenuNode>
 					<name>
@@ -35594,9 +35594,9 @@ phone AS initiate</m_strFieldList>
 					</comments>
 					<id>2</id>
 					<parent>1</parent>
-					<style></style>
+					<style />
 					<href>mypage.htm</href>
-					<params></params>
+					<params />
 					<table>bookmarks</table>
 					<iconName>glyphicon-earphone</iconName>
 					<iconType>2</iconType>
@@ -35608,7 +35608,7 @@ phone AS initiate</m_strFieldList>
 				</MenuNode>
 				<MenuNode>
 					<name>
-						<text></text>
+						<text />
 						<nameType>Text</nameType>
 					</name>
 					<comments>
@@ -35617,9 +35617,9 @@ phone AS initiate</m_strFieldList>
 					</comments>
 					<id>3</id>
 					<parent>1</parent>
-					<style></style>
+					<style />
 					<href>mypage.htm</href>
-					<params></params>
+					<params />
 					<table>bookmarks_inits</table>
 					<iconName>glyphicon-headphones</iconName>
 					<iconType>2</iconType>
@@ -35640,9 +35640,9 @@ phone AS initiate</m_strFieldList>
 					</comments>
 					<id>4</id>
 					<parent>1</parent>
-					<style></style>
+					<style />
 					<href>mypage.htm</href>
-					<params></params>
+					<params />
 					<table>bookmarks_users</table>
 					<iconName>glyphicon-calendar</iconName>
 					<iconType>2</iconType>
@@ -35704,22 +35704,22 @@ phone AS initiate</m_strFieldList>
 				<nameType>Text</nameType>
 			</name>
 			<comments>
-				<text></text>
+				<text />
 				<nameType>Text</nameType>
 			</comments>
 			<id>1</id>
 			<parent>0</parent>
-			<style></style>
+			<style />
 			<href>mypage.htm</href>
-			<params></params>
+			<params />
 			<table>bookmarks</table>
-			<iconName></iconName>
+			<iconName />
 			<iconType>0</iconType>
 			<type>Leaf</type>
 			<linkType>Internal</linkType>
 			<pageType>List</pageType>
 			<openType>None</openType>
-			<color></color>
+			<color />
 		</MenuNode>
 		<MenuNode>
 			<name>
@@ -35727,53 +35727,48 @@ phone AS initiate</m_strFieldList>
 				<nameType>Text</nameType>
 			</name>
 			<comments>
-				<text></text>
+				<text />
 				<nameType>Text</nameType>
 			</comments>
 			<id>2</id>
 			<parent>0</parent>
-			<style></style>
+			<style />
 			<href>mypage.htm</href>
-			<params></params>
+			<params />
 			<table>bookmarks_users</table>
-			<iconName></iconName>
+			<iconName />
 			<iconType>0</iconType>
 			<type>Leaf</type>
 			<linkType>Internal</linkType>
 			<pageType>List</pageType>
 			<openType>None</openType>
-			<color></color>
+			<color />
 		</MenuNode>
 		<MenuNode>
 			<name>
-				<text></text>
+				<text />
 				<nameType>Text</nameType>
 			</name>
 			<comments>
-				<text></text>
+				<text />
 				<nameType>Text</nameType>
 			</comments>
 			<id>3</id>
 			<parent>0</parent>
-			<style></style>
+			<style />
 			<href>mypage.htm</href>
-			<params></params>
+			<params />
 			<table>bookmarks_inits</table>
-			<iconName></iconName>
+			<iconName />
 			<iconType>0</iconType>
 			<type>Leaf</type>
 			<linkType>Internal</linkType>
 			<pageType>Add</pageType>
 			<openType>None</openType>
-			<color></color>
+			<color />
 		</MenuNode>
 	</MenuNodes>
 	<m_strDefaultConnID>wappchat_at_wappchat_mysql_dbaas_com_br</m_strDefaultConnID>
-	<m_customFiles>
-		<v>
-			<m_name>bookmarks_inits_add.htm</m_name>
-			<m_origCrc>2803796606</m_origCrc>
-		</v>
-	</m_customFiles>
+	<m_customFiles />
 	<m_templateFiles />
 </project>

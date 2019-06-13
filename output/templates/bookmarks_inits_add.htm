@@ -1,82 +1,255 @@
-<!DOCTYPE html>
-<HTML {$html_attrs}><HEAD> 
-<META http-equiv="X-UA-Compatible" content="IE=Edge"> 
-<META name="viewport" content="width=device-width, initial-scale=1.0"> <TITLE>
-{$pagetitle} </TITLE> 
-<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
-<META name="GENERATOR" content="MSHTML 11.00.10570.1001">     
-</HEAD> 
-<BODY class="{$stylename} function-add" {$bodyattrs}>{BEGIN body}
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
 
-{$header} 
-<STYLE>
-        {$containerCss}
-      </STYLE>
- 
-<DIV class="bs-top">
-{BEGIN container_editpage}<DIV class="container" data-container="editpage" data-pageid="{$pageid}" {$editpage_chiddenattr}>
-{BEGIN container_header}<DIV class="col-md-9 col-md-offset-3" data-container="header" data-pageid="{$pageid}" {$header_chiddenattr}>
-{BEGIN addheader}<H2 data-brick="addheader" data-pageid="{$pageid}" {$addheader_hiddenattr}>
-{$pagetitlelabel bookmarks_inits add}<FONT color="#ff0000"> <BR> DESABILITADO NA DEMONSTRAÇÃO 
-</FONT></H2>{END addheader}</DIV>{END container_header}
-{BEGIN container_message}<DIV class="col-md-6 col-md-offset-3" data-container="message" data-pageid="{$pageid}" {$message_chiddenattr}> 
-{BEGIN message_block}<DIV class="alert {$message_class}" role="alert" data-brick="message" data-pageid="{$pageid}" {$message_hiddenattr}>
-<H5>
-{$message} </H5>
-<DIV>{BEGIN back_button}<BUTTON class="btn btn-sm btn-default" {$backbutton_attrs}> Voltar ao Menu </BUTTON> {END back_button}{BEGIN view_page_button}<BUTTON class="btn btn-sm btn-default" {$view_page_button_attrs}> Exibir </BUTTON> {END view_page_button}{BEGIN edit_page_button}<BUTTON class="btn btn-sm btn-default" {$edit_page_button_attrs}> Editar </BUTTON> 
-{END edit_page_button}</DIV></DIV>{END message_block}</DIV>{END container_message} </DIV>
-{END container_editpage}{BEGIN container_fields}<DIV class="col-md-12" data-container="fields" data-pageid="{$pageid}" {$fields_chiddenattr}>
-<DIV class="form-horizontal" role="form" data-brick="addfields" data-pageid="{$pageid}" {$addfields_hiddenattr}>
-{BEGIN date_fieldblock}<DIV class="container">
-<DIV class="form-group" data-signal-error-for="date{$id}" data-fieldname="date"><LABEL class="col-md-3 control-label" for="{$labelfor_date}">{BEGIN date_label}
-{$label bookmarks_inits date}{END date_label} 
-</LABEL> 
-<DIV class="col-md-6">
-{$date_editcontrol} 
-</DIV>
-<DIV class="col-md-3 help-block" data-helpfor="date">
-<DIV class="text-muted">
-{$tooltip bookmarks_inits date} </DIV></DIV></DIV></DIV>
-{END date_fieldblock}{BEGIN phone_fieldblock}<DIV class="container">
-<DIV class="form-group" data-signal-error-for="phone{$id}" data-fieldname="phone"><LABEL class="col-md-3 control-label" for="{$labelfor_phone}">{BEGIN phone_label}
-{$label bookmarks_inits phone}{END phone_label} 
-</LABEL> 
-<DIV class="col-md-6">
-{$phone_editcontrol} 
-</DIV>
-<DIV class="col-md-3 help-block" data-helpfor="phone">
-<DIV class="text-muted">
-{$tooltip bookmarks_inits phone} </DIV></DIV></DIV></DIV>
-{END phone_fieldblock}{BEGIN message_fieldblock}<DIV class="container">
-<DIV class="form-group" data-signal-error-for="message{$id}" data-fieldname="message"><LABEL class="col-md-3 control-label" for="{$labelfor_message}">{BEGIN message_label}
-{$label bookmarks_inits message}{END message_label} </LABEL> 
-<DIV class="col-md-6">
-{$message_editcontrol} 
-</DIV>
-<DIV class="col-md-3 help-block" data-helpfor="message">
-<DIV class="text-muted">
-{$tooltip bookmarks_inits message} </DIV></DIV></DIV></DIV>
-{END message_fieldblock}{BEGIN user_fieldblock}<DIV class="container">
-<DIV class="form-group" data-signal-error-for="user{$id}" data-fieldname="user"><LABEL class="col-md-3 control-label" for="{$labelfor_user}">{BEGIN user_label}
-{$label bookmarks_inits user}{END user_label} 
-</LABEL> 
-<DIV class="col-md-6">
-{$user_editcontrol} 
-</DIV>
-<DIV class="col-md-3 help-block" data-helpfor="user">
-<DIV class="text-muted">
-{$tooltip bookmarks_inits user} </DIV></DIV></DIV></DIV>{END user_fieldblock}</DIV></DIV>
-{END container_fields}{BEGIN container_bottombuttons}<DIV class="container" data-container="bottombuttons" data-pageid="{$pageid}" {$bottombuttons_chiddenattr}>
-{BEGIN container_buttons}<DIV class="form-group" data-container="buttons" data-pageid="{$pageid}" {$buttons_chiddenattr}>
-{BEGIN container_leftbuttons}<DIV class="col-md-3 col-md-offset-3" data-container="leftbuttons" data-pageid="{$pageid}" {$leftbuttons_chiddenattr}>{BEGIN addbuttons}{BEGIN save_button}<BUTTON class="btn btn-primary" {$savebutton_attrs}> 
-Enviar </BUTTON> {END save_button}{BEGIN reset_button}<BUTTON class="btn btn-default" id="resetButton{$id}"> Limpar </BUTTON> {END reset_button}{BEGIN back_button}<BUTTON class="btn btn-default" id="backToMenuButton{$id}"> 
-Voltar ao Menu </BUTTON> {END back_button}{BEGIN cancel_button}<A class="btn btn-default" id="cancelButton{$id}" href="#"> Cancela </A>{END cancel_button}{END addbuttons} 
-</DIV>{END container_leftbuttons}</DIV>{END container_buttons}</DIV>{END container_bottombuttons}</DIV>
-<DIV class="bs-middle">
-<DIV class="bs-topmiddle"></DIV>
-<DIV class="bs-left" {$blockattr_left}></DIV> 
-<DIV class="bs-center"></DIV> 
-<DIV class="bs-right"></DIV></DIV>
-<DIV class="bs-bottom"></DIV>
-{$footer}{END body} </BODY></HTML>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_editpage}
+<div {$editpage_chiddenattr} data-pageid="{$pageid}" data-container="editpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-9 col-md-offset-3"> 
+
+{BEGIN addheader}
+	<h2 {$addheader_hiddenattr} data-pageid="{$pageid}" data-brick="addheader" >{$pagetitlelabel bookmarks_inits add}</h2>
+
+{END addheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+
+
+{BEGIN container_message}
+<div {$message_chiddenattr} data-pageid="{$pageid}" data-container="message" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN message_block}
+<div {$message_hiddenattr} data-pageid="{$pageid}" data-brick="message" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		<button class="btn btn-sm btn-default" {$backbutton_attrs}>Voltar ao Menu</button>
+{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Exibir</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+
+{END message_block}
+
+
+
+</div>
+{END container_message}
+
+
+
+
+
+
+
+</div>
+{END container_editpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$addfields_hiddenattr} data-pageid="{$pageid}" data-brick="addfields" class="form-horizontal" role="form">
+			{BEGIN date_fieldblock}
+<div class=container>
+<div class="form-group" data-fieldname="date" data-signal-error-for="date{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_date}">
+		{BEGIN date_label}{$label bookmarks_inits date}{END date_label}
+	</label>
+	<div class="col-md-6" >
+		{$date_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="date">
+		<div class="text-muted" >
+		{$tooltip bookmarks_inits date}
+		</div>
+	</div>
+</div>
+</div>
+{END date_fieldblock}
+
+			{BEGIN phone_fieldblock}
+<div class=container>
+<div class="form-group" data-fieldname="phone" data-signal-error-for="phone{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_phone}">
+		{BEGIN phone_label}{$label bookmarks_inits phone}{END phone_label}
+	</label>
+	<div class="col-md-6" >
+		{$phone_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="phone">
+		<div class="text-muted" >
+		{$tooltip bookmarks_inits phone}
+		</div>
+	</div>
+</div>
+</div>
+{END phone_fieldblock}
+
+			{BEGIN message_fieldblock}
+<div class=container>
+<div class="form-group" data-fieldname="message" data-signal-error-for="message{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_message}">
+		{BEGIN message_label}{$label bookmarks_inits message}{END message_label}
+	</label>
+	<div class="col-md-6" >
+		{$message_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="message">
+		<div class="text-muted" >
+		{$tooltip bookmarks_inits message}
+		</div>
+	</div>
+</div>
+</div>
+{END message_fieldblock}
+
+			{BEGIN user_fieldblock}
+<div class=container>
+<div class="form-group" data-fieldname="user" data-signal-error-for="user{$id}" >
+	<label class="col-md-3 control-label" for="{$labelfor_user}">
+		{BEGIN user_label}{$label bookmarks_inits user}{END user_label}
+	</label>
+	<div class="col-md-6" >
+		{$user_editcontrol}
+	</div>
+	<div class="col-md-3 help-block" data-helpfor="user">
+		<div class="text-muted" >
+		{$tooltip bookmarks_inits user}
+		</div>
+	</div>
+</div>
+</div>
+{END user_fieldblock}
+
+
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-3"> 
+
+{BEGIN addbuttons}
+	{BEGIN save_button}
+	<button class="btn btn-primary" {$savebutton_attrs}>Salvar</button>
+	{END save_button}
+	{BEGIN reset_button}
+	<button class="btn btn-default" id="resetButton{$id}">Limpar</button>
+	{END reset_button}
+	{BEGIN back_button}
+		<button class="btn btn-default" id="backToMenuButton{$id}">Voltar ao Menu</button>
+	{END back_button}
+	{BEGIN cancel_button}
+	<a href="#" class="btn btn-default" id="cancelButton{$id}">Cancela</a>
+	{END cancel_button}
+
+{END addbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
